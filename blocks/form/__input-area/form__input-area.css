@@ -1,0 +1,12 @@
+.form__input-area {
+    width: 360px;
+    height: 201px;
+    margin-left: 20px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #464646;
+    padding: 20px 0 0 28px;
+    
+}

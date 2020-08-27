@@ -1,11 +1,11 @@
-@import url(./header__logo/header__logo.css);
-@import url(./header__name/header__name.css);
-@import url(./header__title/header__title.css);
-@import url(./header__subtitle/header__subtitle.css);
-@import url(./header__mail/header__mail.css);
-@import url(./header__contact/header__contact.css);
-@import url(./header__tel/header__tel.css);
-@import url(./header__callback/header__callback.css);
+@import url(./__logo/header__logo.css);
+@import url(./__name/header__name.css);
+@import url(./__title/header__title.css);
+@import url(./__subtitle/header__subtitle.css);
+@import url(./__mail/header__mail.css);
+@import url(./__contact/header__contact.css);
+@import url(./__tel/header__tel.css);
+@import url(./__callback/header__callback.css);
 
 
 
@@ -13,7 +13,6 @@
     max-width: 1174px;
     height: 90px;
     margin: auto;
-    border: 1px solid #000;
     display: flex;
     align-items: center;
     text-align: justify;

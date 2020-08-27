@@ -1,0 +1,12 @@
+.bureau__slider {
+    /* position: relative; */
+    max-width: 1920px;
+    margin-top: 20px;
+}
+
+.bureau__text {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    
+}

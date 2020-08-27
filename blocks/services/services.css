@@ -1,0 +1,13 @@
+@import url(./__wrapper/services__wrapper.css);
+@import url(./__line/services__line.css);
+@import url(./__title/services__title.css);
+@import url(./__title/_lighter/services__title_lighter.css);
+@import url(./__button/services__button.css);
+
+
+.services {
+    max-width: 100%;
+    height: 481px;
+    background-image: url(../../image/services.jpg);
+    background-size: cover;
+}
