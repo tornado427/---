@@ -1,0 +1,18 @@
+@import url(./__title/slider-services__title.css);
+@import url(./__slider/slider-services__slider.css);
+
+
+.slider-services {
+    max-width: 380px;
+    margin: 0 auto;
+
+}
+
+@media (max-width : 1240px) {
+    .slider-services {
+        max-width: 380px;
+        margin: 0 auto;
+        
+    } 
+  }
+ 

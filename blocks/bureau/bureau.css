@@ -10,3 +10,11 @@
     margin: auto;
     padding-bottom: 76px;
 }
+
+@media (max-width : 1240px) {
+    .bureau {
+        max-width: 380px;
+        margin: auto;
+        
+    } 
+  }

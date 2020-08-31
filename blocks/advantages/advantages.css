@@ -1,6 +1,16 @@
 @import url(./__list/advantages__list.css);
+@import url(./__item/advantages__item.css);
 
 .advantages {
     max-width: 1174px;
     margin: auto;
 }
+
+@media (max-width : 1240px) {
+    .advantages {
+      background-color: #f4f4f4;
+      max-width: 380px;
+      margin: 0 auto;
+    } 
+  }
+  

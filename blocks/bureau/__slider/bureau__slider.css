@@ -10,3 +10,11 @@
     font-weight: 500;
     
 }
+
+@media (max-width : 1240px) {
+    .bureau__slider {
+        max-width: 270px;
+        margin: auto;
+        
+    } 
+  }

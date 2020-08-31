@@ -4,12 +4,11 @@
 
 .card {
     max-width: 231px;
-    margin-right: 86px;
+    margin: auto;
+    
 
 }
 
-.card:last-child {
-   margin-right: 0;
-}
+
 
 

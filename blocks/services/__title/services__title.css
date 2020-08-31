@@ -3,5 +3,18 @@
     font-weight: normal;
     padding: 88px 0 0 0;
     color: #ffffff;
+    font-size: 34px;
 
 }
+
+@media (max-width : 1240px) {
+    .services__title {
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: bold;
+        padding: 58px 0 0 0;
+        color: #000000;
+        
+        
+    } 
+  }

@@ -16,3 +16,11 @@
     background-color: #D2161D;
     
 }
+
+@media (max-width : 1240px) {
+    .banner__button {
+      text-align: center;
+      margin: 48px auto 0;
+      display: block;
+    } 
+  }

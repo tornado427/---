@@ -8,6 +8,8 @@
 @import url(./__input/footer__input.css);
 @import url(./__button/footer__button.css);
 @import url(./__copyright/footer__copyright.css);
+@import url(./__tel/footer__tel.css);
+@import url(./__callback/footer__callback.css);
 
 
 .footer {
@@ -16,3 +18,11 @@
     background-color: #28373D;
     padding-top: 69px;
 }
+
+@media (max-width : 1240px) {
+    .footer {
+      max-width: 380px;
+      margin: 0 auto;
+      padding-top: 30px;
+    } 
+  }

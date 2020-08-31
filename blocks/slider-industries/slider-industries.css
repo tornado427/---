@@ -1,0 +1,7 @@
+@import url(./__title/slider-industries__title.css);
+@import url(./__slider/slider-industries__slider.css);
+
+.slider-industries {
+    max-width: 380px;
+    margin: 0 auto;
+}

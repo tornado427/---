@@ -7,3 +7,10 @@
     
     
 }
+
+@media (max-width : 1240px) {
+    .header__name {
+        min-width: 260px;
+        margin: 15px 0px 16px
+    } 
+  }

@@ -5,3 +5,12 @@
     margin: 69px 0 0 0;
     justify-content: space-between;
 }
+
+@media (max-width : 1240px) {
+    .advantages__list {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0 20px;
+    } 
+  }

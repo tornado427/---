@@ -3,3 +3,11 @@
     max-width: 1174px;
     border-bottom: 1px solid #DBDBDB;
 }
+
+
+@media (max-width : 1240px) {
+    .line-hr {
+        max-width: 380px;
+        
+    } 
+  }
