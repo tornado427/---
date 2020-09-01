@@ -4,12 +4,7 @@
     margin-top: 20px;
 }
 
-.bureau__text {
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
-    
-}
+
 
 @media (max-width : 1240px) {
     .bureau__slider {

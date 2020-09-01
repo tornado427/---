@@ -4,6 +4,7 @@
 @import url(./__arrows/bureau__arrows.css);
 @import url(./__slider/bureau__slider.css);
 @import url(./__button/bureau__button.css);
+@import url(./__text/bureau__text.css);
 
 .bureau {
     max-width: 1920px;
