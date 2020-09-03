@@ -9,11 +9,21 @@
 @import url(./__send/form__send.css);
 @import url(./__input-checkbox/form__input-checkbox.css);
 @import url(./__label/form__label.css);
+@import url(./__link/form__link.css);
+@import url(./__button/form__button.css);
 
 .form {
     max-width: 1174px;
     margin: auto;
     position: relative;
-    padding-top: 62px;
     display: flex;
+   
 }
+
+
+@media (max-width : 1240px) {
+    .form {
+      display: block;
+      max-width: 380px;
+    } 
+  }

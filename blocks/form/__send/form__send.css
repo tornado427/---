@@ -2,3 +2,11 @@
     display: flex;
     margin-top: 32px;
 }
+
+@media (max-width : 1240px) {
+    .form__send {
+        display: block;
+        text-align: start;
+        margin: 0 43px;
+    } 
+  }

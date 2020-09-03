@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top:0px;
+    top: -42px;
     
 
     display: block;
@@ -46,14 +46,21 @@
 @media (max-width : 1240px) {
     .slick-prev,
     .slick-next {
-        top: 130px;
+        top: 110px;
         
     } 
   }
-.slick-prev:hover,
-/* .slick-prev:focus, */
-.slick-next:hover
-/* .slick-next:focus */
+.slick-prev:hover
+{
+    color: transparent;
+    outline: none;
+    background: url('../image/slider-arrow-left-hover.png');
+    width: 10px;
+    height: 17px;
+    background-size: cover;
+}
+
+.slider-services .slick-prev:hover, .slider-industries .slick-prev:hover
 {
     color: transparent;
     outline: none;
@@ -65,8 +72,16 @@
 
 
 .slick-next:hover
-/* .slick-next:focus */
 {
+    color: transparent;
+    outline: none;
+    background: url('../image/slider-arrow-right-hover.svg');
+    width: 10px;
+    height: 17px;
+    background-size: cover;
+}
+
+.slider-services .slick-next:hover, .slider-industries .slick-next:hover {
     color: transparent;
     outline: none;
     background: url('../image/slider-arrow-right-hover.svg');
@@ -102,9 +117,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.slider-services  .slick-prev, .slider-industries .slick-prev
+{
+    left: 1120px;
+    background: url('../image/slider-arrow-left.svg');
+    width: 10px;
+    height: 17px;
+    background-size: cover;
+}
 .slick-prev
 {
-    left: 1140px;
+    left: 1320px;
     background: url('../image/slider-arrow-left.svg');
     width: 10px;
     height: 17px;
@@ -125,7 +148,15 @@
         height: 17px;
         background-size: cover;
         
-    } 
+    }
+    .slider-services  .slick-prev, .slider-industries .slick-prev {
+        left: 20px;
+        background: url('../image/slider-arrow-left.svg');
+        width: 10px;
+        height: 17px;
+        background-size: cover;
+        
+    }
   }
 
 /* .slick-prev:before
@@ -136,10 +167,17 @@
 {
     content: '→';
 } */
-
+.slider-services .slick-next, .slider-industries .slick-next
+{
+    left: 1140px;
+    background: url('../image/slider-arrow-right.svg');
+    width: 10px;
+    height: 17px;
+    background-size: cover;
+}
 .slick-next
 {
-    right: -1130px;
+    left: 1340px;
     background: url('../image/slider-arrow-right.svg');
     width: 10px;
     height: 17px;
@@ -158,8 +196,14 @@
         width: 10px;
         height: 17px;
         background-size: cover;
-        
-    } 
+    }
+    .slider-services .slick-next, .slider-industries .slick-next {
+        left: 346px;
+        background: url('../image/slider-arrow-right.svg');
+        width: 10px;
+        height: 17px;
+        background-size: cover;
+    }
   }
 
 

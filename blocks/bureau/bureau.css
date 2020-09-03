@@ -9,7 +9,7 @@
 .bureau {
     max-width: 1920px;
     margin: auto;
-    padding-bottom: 76px;
+    padding:52px 0 76px;
 }
 
 @media (max-width : 1240px) {

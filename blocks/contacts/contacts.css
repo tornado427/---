@@ -12,3 +12,11 @@
     display: flex;
     
 }
+
+@media (max-width : 1240px) {
+    .contacts {
+        max-width: 380px;
+        display: block;
+        text-align: center;
+    } 
+  }
