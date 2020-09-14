@@ -243,12 +243,34 @@
         </section>
 
         <section class="services-form media-1920px">
-            <h2 class="title services-form__title">Заказать металлообработку Вы можете позвонив нам +7 (770) 770-70-70 </h2>
-            <input type="text" class="input services-form__input" placeholder="Введите Имя"></input>
-            <input type="text" class="input services-form__input" placeholder="Введите номер телефона"></input>
-            <input id="checkbox" type="checkbox" class="input services-form__input-checkbox"></input>
-            <label for="checkbox" class="services-form__label">Согласие на <a href="#" class="services-form__link">обработку данных</a></label>
-            <button class="button button_color_red button_type_small services-form__button">Заказать</button>
+            <form class="form services-form__form" action="#">
+                <h2 class="title services-form__title">Заказать металлообработку Вы можете позвонив нам +7 (770) 770-70-70 </h2>
+                <input 
+                    class="input services-form__input services-form__input_type_name"
+                    type="text"
+                    name="input-name_type_services-form"
+                    placeholder="Введите Имя"
+                    minlength="2"
+                    maxlength="30"
+                    required>
+                <input 
+                    class="input services-form__input"
+                    type="tel"
+                    name="input-tel_type_services-form"
+                    placeholder="Введите номер телефона"
+                    minlength="11"
+                    pattern="^[\d\s+-.()]+"
+                    required>
+                <input 
+                    id="checkbox"
+                    class="input services-form__input-checkbox"
+                    type="checkbox"
+                    name="checkbox_type_services-form"
+                    required>
+                <label for="checkbox" class="services-form__label">Согласие на <a ref="#" class="services-form__link">обработку данных</a></label>
+                <button type="submit" class="button button_color_red button_type_small services-form__button">Заказать</button>
+            </form>
+            
         </section>
 
         <section class="slider-industries media-1920px">
@@ -302,7 +324,7 @@
         </section>
 
         <section class="services media-1240px">
-            <div class="form">
+            <form class="form services__form">
                 <img src="./image/banner-line.svg" alt="" class="line form__line">
                 <div class="form__column-one">
                     <h2 class="title form__title">Да, мы обслуживаем Вашу нишу!</h2>
@@ -312,20 +334,51 @@
                 <div class="form__column-two">
                     <div class="form__inputs">
                         <div class="form__wrap-inputs">
-                            <input type="text" class="form__input" placeholder="Введите Имя"></input>
-                            <input type="tel" class="form__input" placeholder="Введите номер телефона"></input>
-                            <input type="email" class="form__input" placeholder="Введите e-mail"></input>
+                            <input
+                                class="input form__input"
+                                type="text"
+                                name="input-name_type_services"
+                                placeholder="Введите Имя"
+                                minlength="2"
+                                maxlength="30"
+                                required>
+                            <input
+                                class="input form__input"
+                                type="tel"
+                                name="input-tel_type_services"
+                                pattern="^[\d\s+-.()]{10,16}"
+                                placeholder="Введите номер телефона"
+                                minlength="10"
+                                maxlength="16"
+                                required>
+                            <input
+                                class="input form__input"
+                                name="input-email_type_services"
+                                type="email"
+                                placeholder="Введите e-mail"
+                                pattern="[\w\d\.-]+@[а-яА-Я\w\d\.]+\.[а-яА-Я\w\d\.][а-яА-Я\w\d\.]+"
+                                required>
                         </div>  
-                        <textarea name="" id="" cols="30" rows="10" class="form__input-area" placeholder="Ваш вопрос, комментарий..."></textarea>
+                        <textarea
+                            name="input-coment_type_services" 
+                            class="input form__input-area" 
+                            placeholder="Ваш вопрос, комментарий..." 
+                            required></textarea>
                     </div>
                     <div class="form__send">
-                        <button class="button button_color_red form__button">отправить</button>
-                        <input id="checkbox" type="checkbox" class="form__input-checkbox"></input>
-                        <label for="checkbox" class="form__label">Соглашаюсь с <a href="#" class="form__link">Политикой конфиденциальности</a> <br> и даю согласие на обработку персональных данных</label>
+                        <button type="submit" class="button button_color_red form__button">отправить</button>
+                        <input 
+                            type="checkbox" 
+                            id="checkbox1" 
+                            class="input form__input-checkbox" 
+                            name="checkbox_type_services" 
+                            required>
+                        </input>
+                        <label for="checkbox1" class="form__label">Соглашаюсь с <a href="#" class="form__link">Политикой конфиденциальности</a> <br> и даю согласие на обработку персональных данных</label>
                     </div>
                 </div>
                 
-             </div>
+            </form>
         </section>
 
         <hr class="line-hr media-1240px"  color="#DBDBDB" size="1">
@@ -367,10 +420,14 @@
                 </ul>
                 <p class="footer__tel media-1920px">+7 (700) 777-70-70</p>
                 <a href="#" class="footer__callback media-1920px">Заказать звонок</a>
-                <div class="footer__search">
-                    <input type="text" class="footer__input" placeholder="Поиск...">
-                    <button class="footer__button"></button>
-                </div>
+                <form class="footer__search">
+                    <input 
+                    type="text" 
+                    class="input footer__input"
+                    name="request"
+                    placeholder="Поиск...">
+                    <button type="submit" class="footer__button"></button>
+                </form>
             </div>
             <hr class="line-hr line-hr_color media-1240px"  color="#DBDBDB" size="1">
             <div class="footer__copyright">Резка МО 2020 (с) Все права защищены</div>
@@ -380,37 +437,72 @@
     </footer>
 
    
-    <div class="popup popup_type_big">  <!-- popup_opened -->
-        <form class="popup__form popup__form_type_big" action="#" method="POST" name="add-place" novalidate>
+    <div class="popup popup_type_big ">  <!-- popup_opened -->
+        <form class="form popup__form popup__form_type_big" action="#" method="POST" name="add-place">
           <img src="./image/icon-close.png" class="popup__icon-close popup__icon-close_type_big"></img>
-          <input id="input-name" class="popup__input popup__input_type_big" type="text" name="input-name"
-            placeholder="Название" required minlength="1" maxlength="30">
-          <span id="input-place-error" class="popup__input-name-error"></span>
-          <input id="input-tel" class="popup__input popup__input_type_big" type="url" name="input-tel"
-            placeholder="Номер телефона" required>
-          <span id="input-tel-error" class="popup__input-tel-error"></span>
-          <textarea name="" id="" cols="30" rows="10" class="popup__input-area popup__input-area_type_big" placeholder="Ваш вопрос, комментарий..."></textarea>
-          <span id="input-area" class="popup__input-area-error"></span>
-          <input id="checkbox" type="checkbox" class="popup__input-checkbox popup__input-checkbox_type_big"></input>
-          <label for="checkbox" class="popup__label">Согласие на <a href="#" class="popup__link">обработку данных</a></label>
+          <input 
+            id="input-name" 
+            class="input popup__input popup__input_type_big" 
+            type="text" 
+            name="input-name_type_big"
+            placeholder="Название" 
+            required 
+            minlength="2" 
+            maxlength="30">
+          <input 
+            id="input-tel" 
+            class="input popup__input popup__input_type_big" 
+            type="tel" 
+            name="input-tel_type_big"
+            pattern="^[\d\s+-.()]{10,16}"
+            placeholder="Номер телефона" 
+            required>
+          <textarea 
+            name="input-name_type_big" 
+            id="" 
+            class="input popup__input-area popup__input-area_type_big" 
+            placeholder="Ваш вопрос, комментарий..."></textarea>
+          <input 
+            id="checkbox2" 
+            type="checkbox"
+            name="checkbox_type_big"
+            class="input popup__input-checkbox popup__input-checkbox_type_big">
+          <label for="checkbox2" class="popup__label">Согласие на <a href="#" class="popup__link">обработку данных</a></label>
           <button class="button button_color_red button_type_w275 popup__button  popup__button_type_big popup__button_disabled" type="submit"
-            disabled>Создать</button>
+            disabled>Свяжитесь со мной</button>
         </form>
       </div>
 
       <div class="popup popup_type_normal ">
-        <form class="popup__form popup__form_type_normal" action="#" method="POST" name="add-place" novalidate>
+        <form class="popup__form popup__form_type_normal" action="#" method="POST" name="add-place">
           <img src="./image/icon-close.png" class="popup__icon-close popup__icon-close_type_normal"></img>
-          <input id="input-name" class="popup__input popup__input_type_normal" type="text" name="input-name"
-            placeholder="Название" required minlength="1" maxlength="30">
-          <span id="input-place-error" class="popup__input-name-error"></span>
-          <input id="input-tel" class="popup__input popup__input_type_normal" type="url" name="input-tel"
-            placeholder="Номер телефона" required>
-          <span id="input-tel-error" class="popup__input-tel-error"></span>
-          <input id="checkbox" type="checkbox" class="popup__input-checkbox popup__input-checkbox_type_normal"></input>
-          <label for="checkbox" class="popup__label">Согласие на <a href="#" class="popup__link">обработку данных</a></label>
-          <button class="button button_color_red button_type_w275 popup__button  popup__button_type_normal popup__button_disabled" type="submit"
-            disabled>Создать</button>
+          <input 
+            id="input-name1" 
+            class="input popup__input popup__input-name_type_normal" 
+            type="text" 
+            name="input-name_type-normal"
+            placeholder="Название"  
+            minlength="2" 
+            maxlength="30" 
+            required>
+          <input 
+            id="input-tel1" 
+            class="input popup__input popup__input-tel_type_normal" 
+            type="tel" 
+            name="input-tel_type-normal"
+            placeholder="Номер телефона" 
+            pattern="^[\d\s+-.()]{10,16}" 
+            minlength="10"
+            maxlength="16"
+            required>
+          <input 
+          id="checkbox3" 
+          type="checkbox" 
+          name="checkbox_type_normal"
+          class="input popup__input-checkbox popup__input-checkbox_type_normal"
+          required>
+          <label for="checkbox3" class="popup__label">Согласие на <a href="#" class="popup__link">обработку данных</a></label>
+          <button type="submit" class="button button_color_red button_type_w275 popup__button  popup__button_type_normal popup__button_disabled" type="submit">Свяжитесь со мной</button>
         </form>
       </div>
 
@@ -589,7 +681,7 @@
                 });
             });
     </script>
-    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
     
 </body>
 </html>
