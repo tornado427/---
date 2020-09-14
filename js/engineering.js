@@ -131,14 +131,7 @@ function formSubmitHandler(evt) {
     const dataInputs = {};
 
     const formElement = evt.target;
-      //console.log(formElement);
-      if (formElement.className === 'footer__input') {
-        const inputSearch = formElement.querySelector('.footer__input');
-        dataInputs.search = inputSearch.value;
-
-        postDataForm(dataInputs);
-      }
-        
+            
     const inputs = formElement.querySelectorAll('.input')
     
     const input = inputs.forEach(input => {
@@ -167,11 +160,7 @@ function searchSubmitHandler(evt) {
         searchInputs.search = inputSearch.value;
 
         postDataSearch(searchInputs);
-              
-        console.log(searchInputs)
-  
-
-    
+           
     reset(consultationForm);
 }
 

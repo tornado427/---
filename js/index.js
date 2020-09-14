@@ -132,14 +132,7 @@ function formSubmitHandler(evt) {
     const dataInputs = {};
 
     const formElement = evt.target;
-      //console.log(formElement);
-      if (formElement.className === 'footer__input') {
-        const inputSearch = formElement.querySelector('.footer__input');
-        dataInputs.search = inputSearch.value;
-
-        postDataForm(dataInputs);
-      }
-        
+            
     const inputs = formElement.querySelectorAll('.input')
     
     const input = inputs.forEach(input => {
@@ -200,18 +193,14 @@ function searchSubmitHandler(evt) {
     evt.preventDefault();
 
     const searchInputs = {};
+    //console.log(formElement);
+    const inputSearch = document.querySelector('.footer__input');
+    searchInputs.search = inputSearch.value;
 
-     
-      //console.log(formElement);
-        const inputSearch = document.querySelector('.footer__input');
-        searchInputs.search = inputSearch.value;
-
-        postDataSearch(searchInputs);
+    postDataSearch(searchInputs);
               
-        console.log(searchInputs)
-  
-
-    
+    console.log(searchInputs)
+      
     reset(servicesForm);
 }
 
